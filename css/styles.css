@@ -4,9 +4,9 @@ body {
     min-height: 100vh;
     justify-content: flex-start;
 }
-header, footer, .hero-section{
-    padding-left: 100px;
-    padding-right: 100px;
+header, footer, .hero-section, .info-cards{
+    padding-left: 150px;
+    padding-right: 150px;
 }
 header, 
 footer{
@@ -14,33 +14,42 @@ footer{
     background-color: #1F2937;
 }
 .hero-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #1F2937;
     color: white;
     display: flex;
-    align-content: space-between;
     justify-content: space-between;
+    gap: 10px;
+}
+.hero-card{
+    min-width: 350px;
 }
 .hero-card h4{
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    margin-bottom: 10px;
 }
 .hero-card p{
     font-size: 18px;
     color: #f9faf8;
+    line-height: 25px;
 }
 .hero-card button{
     background-color: #3882F6;
     color: #f9faf8;
     padding: 5px;
-    margin: 5px;
+    margin-top: 10px;
     border-radius: 5px;
+    padding: 5px 20px;
 
 }
 .hero-image {
-    height: 100px;
-    width: 200px;
+    height: 250px;
+    width: 500px;
     background-color: grey;
+    flex-shrink: 0;
 }
 
 
@@ -70,6 +79,32 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+.info-section h4{
+    text-align: center;
+    margin: 50px;
+}
+.info-cards{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin: 25px;
+    flex-wrap: wrap;
+    min-width: 750px;
+}   
+.info-card{
+    border: 1px solid blue;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    flex-shrink: 0;    
+}
+.info-card img{
+    height: 100px;
+    width: 150px;
+    background-color: green;
+}
+
 footer {
     height: 72px;
     background: #1F2937;
