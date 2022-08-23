@@ -45,7 +45,8 @@ footer {
     line-height: 25px;
 }
 
-.hero-card button {
+.hero-card button,
+.action-button button {
     background-color: #3882F6;
     color: #f9faf8;
     padding: 5px;
@@ -53,6 +54,11 @@ footer {
     border-radius: 5px;
     padding: 5px 20px;
 
+}
+.hero-card button:hover,
+.action-button button:hover{
+    background-color: black;
+    color: white;
 }
 
 .hero-image {
@@ -99,6 +105,11 @@ a:hover {
     text-align: center;
     min-width: 1050px;
     margin: 50px;
+    font-size: 2rem;
+}
+
+.info-section {
+    margin-bottom: 50px;
 }
 
 .info-cards {
@@ -125,8 +136,52 @@ a:hover {
     text-align: center;
 }
 
+.quote-section {
+    background-color: #e5e7eb;
+}
 
+.quote-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
 
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bolder;
+}
+
+.action-section{
+    padding: 50px 0;
+}
+.action-container{
+    display: flex;
+    background-color: #3882F6;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 5px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.action-text{
+    color: white;
+}
+.action-text h4{
+    font-size: 1.25rem;
+}
+.action-button button{
+    border: 1px solid white;
+    border-radius: 5px;
+}
 footer {
     height: 72px;
     background: #1F2937;
@@ -136,18 +191,34 @@ footer {
     justify-content: center;
     margin-top: auto;
 }
+
 @media only screen and (max-width: 1500px) {
     .info-card {
         flex: 0 0 25%;
         margin: 5px;
     }
+
+    .quote-container {
+        width: 70%;
+    }
+    .action-container{
+        width: 800px;
+    }
 }
+
 @media only screen and (max-width: 1400px) {
     .info-card {
         flex: 0 0 33%;
         margin: 5px;
     }
+
+    .quote-container {
+        width: 900px;
+    }.action-container{
+        width: 700px;
+    }
 }
+
 /* @media only screen and (max-width: 900px) {
     .info-card {
         flex: 0 0 90%;
