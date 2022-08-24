@@ -43,10 +43,10 @@ footer {
     font-size: 18px;
     color: #f9faf8;
     line-height: 25px;
+    margin-bottom: 20px;
 }
 
-.hero-card button,
-.action-button button {
+.button {
     background-color: #3882F6;
     color: #f9faf8;
     padding: 5px;
@@ -55,10 +55,14 @@ footer {
     padding: 5px 20px;
 
 }
-.hero-card button:hover,
-.action-button button:hover{
-    background-color: black;
-    color: white;
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.action-button .button {
+    border: 1px solid white;
 }
 
 .hero-image {
@@ -158,10 +162,12 @@ a:hover {
     font-weight: bolder;
 }
 
-.action-section{
+.action-section {
     padding: 50px 0;
+    font-size: 1.2rem;
 }
-.action-container{
+
+.action-container {
     display: flex;
     background-color: #3882F6;
     width: 900px;
@@ -172,16 +178,15 @@ a:hover {
     align-items: center;
     height: 100px;
 }
-.action-text{
+
+.action-text {
     color: white;
 }
-.action-text h4{
+
+.action-text h4 {
     font-size: 1.25rem;
 }
-.action-button button{
-    border: 1px solid white;
-    border-radius: 5px;
-}
+
 footer {
     height: 72px;
     background: #1F2937;
@@ -201,7 +206,8 @@ footer {
     .quote-container {
         width: 70%;
     }
-    .action-container{
+
+    .action-container {
         width: 800px;
     }
 }
@@ -214,7 +220,9 @@ footer {
 
     .quote-container {
         width: 900px;
-    }.action-container{
+    }
+
+    .action-container {
         width: 700px;
     }
 }
